@@ -1,2 +1,2 @@
-# graylog_extractors
+# Graylog Extractors
 Graylog extractors for my homelab equipment.
