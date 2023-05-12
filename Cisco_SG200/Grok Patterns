@@ -1,0 +1,10 @@
+Create new pattern under `System` -> `Grok patterns` -> `Create pattern`
+
+Name: HTTP_CONNECTION
+Pattern: New http[s]? connection for user %{DATA:user}, source %{IP:source_ip} destination %{IP:destination_ip} %{WORD:connection_status}
+
+Name: REJECTED_CONNECTION
+Pattern: New http connection for user %{DATA:user}, source %{IP:source_ip} destination %{IP:destination_ip} %{WORD:connection_status}
+
+Name: TERMINATED_CONNECTION
+Pattern: http connection for user %{DATA:user}, source %{IP:source_ip} destination %{IP:destination_ip} %{WORD:connection_status}
